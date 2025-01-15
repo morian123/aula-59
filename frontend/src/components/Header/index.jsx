@@ -3,13 +3,13 @@ import mixer from "../../assets/mixer.svg"
 
 export default function Header(props) {
   return (
-    <header>
+    <header className="flex items-center justify-between ">
         <button type="button">
-          <img src={arrowDown} alt="Arrow down icon" />
+          <img className="w-6 h-6" src={arrowDown} alt="Arrow down icon" />
         </button>
-        <h1>{props.title}</h1>
+        <h1 className="text-lg font-bold">{props.title}</h1>
         <button type="button">
-          <img src={mixer} alt="Mixer icon" />
+          <img className="w-6 h-6" src={mixer} alt="Mixer icon" />
         </button>
       </header>
   )
